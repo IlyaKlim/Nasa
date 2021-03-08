@@ -16,7 +16,7 @@ class RepositoryModule {
     fun providesNetRepository(api: Api)=NetRepository(api)
     @Provides
     fun provideService(gsonConverterFactory: GsonConverterFactory): Api = Retrofit.Builder()
-        .baseUrl("http://10.0.2.2:3000")
+        .baseUrl("https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/")
         .addConverterFactory(gsonConverterFactory)
         //.addCallAdapterFactory()
         .build()
