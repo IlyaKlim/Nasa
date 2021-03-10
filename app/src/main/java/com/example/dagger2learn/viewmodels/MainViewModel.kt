@@ -1,7 +1,7 @@
 package com.example.dagger2learn.viewmodels
-
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
+<<<<<<< HEAD
 import androidx.lifecycle.viewModelScope
 import com.example.dagger2learn.network.NetRepository
 import com.example.dagger2learn.network.retrofit2.ResponseModule
@@ -24,4 +24,11 @@ class MainViewModel @Inject constructor(private val repository: NetRepository) :
             }
         }
     }
+=======
+import com.example.dagger2learn.net.Repository
+
+class MainViewModel(val repository:Repository): ViewModel() {
+     private val data=MutableLiveData<Int>()
+     fun getData(){}
+>>>>>>> b9b26898b41e7d10a969f4df9d446e65c3d932e1
 }
