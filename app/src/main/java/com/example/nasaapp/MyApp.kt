@@ -1,7 +1,7 @@
-package com.example.dagger2learn
+package com.example.nasaapp
 
 import android.app.Application
-import com.example.dagger2learn.di.appModule
+import com.example.nasaapp.di.appModule
 import org.koin.android.ext.koin.androidContext
 import org.koin.core.context.startKoin
 
