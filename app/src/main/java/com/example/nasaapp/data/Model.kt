@@ -1,6 +1,6 @@
 package com.example.nasaapp.data
 
-import android.net.Uri
+
 import com.google.gson.annotations.SerializedName
 
 data class Model(
